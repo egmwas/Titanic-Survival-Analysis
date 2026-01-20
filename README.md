@@ -11,12 +11,25 @@ The data is sourced from DPhi's Titanic Dataset. It contains information about 8
 ## 🛠️ Models & Performance
 I utilized GridSearchCV with 10-fold cross-validation to optimize hyperparameters for each model.
 
-Model,Accuracy (Cross-Val),Status
+| Model | Accuracy (Cross-Val) | Status |
+|----------|----------|----------|
+| LightGBM    | 84.72%   | 🏆 Best Performer   |
+| XGBoost    | 84.58%   | Runner Up   |
+| Random Forest    | ~83.06%   | Very Stable   |
+| Decision Tree    | ~81.88%   | Baseline   |
 
-LightGBM,84.72%,🏆 Best Performer
+## Key Insights & Findings
 
-XGBoost,84.58%,Runner Up
+- Gender was the strongest predictor of survival, with females having significantly higher survival rates.
+- Passengers in higher classes (1st class) had better survival outcomes.
+- Smaller family sizes were associated with higher survival probabilities.
+- Younger passengers had slightly better survival chances compared to older age groups.
 
-Random Forest,~83.06%,Very Stable
+## Tools & Technologies
 
-Decision Tree,~81.88%,Baseline
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-learn
+- Google Colab
+- GitHub
